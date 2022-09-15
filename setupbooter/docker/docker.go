@@ -83,7 +83,7 @@ func dockerAttach(number int) *exec.Cmd {
 * will use the 10 hardcoded pk/sk of the genesis block
  */
 func dockerCompose(count int) *exec.Cmd {
-	cmd := exec.Command("docker-compose", "--project-name", dockerImageName, "up", "--scale", dockerComposeService+"="+strconv.Itoa(count))
+	cmd := exec.Command("docker-compose", "--compatibility", "--project-name", dockerImageName, "up", "--scale", dockerComposeService+"="+strconv.Itoa(count))
 	return cmd
 }
 
