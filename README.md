@@ -52,10 +52,10 @@ Notice that the make targets automatically builds for you.
 ## With a shell
 
 ##### Start *n* peer services with
-`docker-compose --project-name systemtest up --scale peer=n`
+`docker-compose --project-name dissy up --scale peer=n`
 
 ##### To inspect a peer, attach from shell to a docker container *n* with
-`docker attach systemtest_peer_n`
+`docker attach dissy_peer_n`
 
 # Cleaning up
 To stop running containers, run:
